@@ -24,7 +24,7 @@ public class CustomerController {
 		
 	}
 	
-	@GetMapping("/cusomerSearch/{lastName}")
+	@GetMapping("/customerSearch/{lastName}")
 	public void cusomerSearch(@PathVariable("lastName") String lastName) {
 		
 		List<Customer> customers =  customerRepository.findByLastName(lastName);
